@@ -14,6 +14,7 @@
 				 alert ("Programame por favor¡¡¡¡¡ :3 \n")
 
 			}
+
 		</script>
 	</head>
 	
@@ -39,12 +40,15 @@
 								    <span class="icon-user"> </span>Usuario:<br>
 				                    <input type="text" name="Usuario" id="user_input" class="user_input">
 				                    <br>
-			        			    <span class="icon-keyboard"> </span>Contraseña:<br>
-				                    <input type="text" name="Contraseña" id="password_input" class="password_input">
-				                    <br>
+			        			    <span class="icon-key2"> </span>Contraseña:<br>
+				                    <input type="password" name="Contraseña" id="password_input" class="password_input">
+				            </form>        
+				                    <button  id="btn_nopass" onclick="ocultar_pass()" class="btn_oc_pass type="button" "><span class="icon-power"></span>Mostrar contraseña</button>
+
+				                    <button onclick="entrar_fail()" class="btn_entrar"><span class="icon-clubs"></span> Entrar</button>
 				                    
-			        				<button onclick="entrar_fail()" class="btn_entrar"><span class="icon-clubs"></span> Entrar</button>
-			            	</form>
+			        				
+			            	
 						</section>
 						
 			  </section>
@@ -55,5 +59,6 @@
         </div>	
     </body>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script src="javascript/cargar.js"></script>	
+    <script src="javascript/ocultar_pass.js"></script>
+    <script src="javascript/cargar.js"></script>
 </html> 

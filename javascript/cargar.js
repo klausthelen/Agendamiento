@@ -1,10 +1,12 @@
 $(document).ready(main);
-
+var contador = 0;
 function main(){
 	
 	//funcion para que se anime el menu al iniciar
 	menu();	
 	index();
+	ocultar();
+	
 };
 
 function menu(){
@@ -53,8 +55,9 @@ function menures(){
 }
 
 function index(){
+
 	$("#Welcome").toggle();
 	$("#Welcome").show(500,function(){});	
-								
+	
+}				
 						
-}
