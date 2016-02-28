@@ -25,6 +25,50 @@ img{
   width: 100%;
    }
 
+header{
+  width: 100%;
+
+}
+.menu_bar{
+  display: none;
+}
+
+.nav_menu{
+  margin: 0.5em auto;
+  
+  width: 80%;
+  background-color: rgba(242,246,248,0.1);
+  font-weight: bold;
+
+}
+
+header nav ul {
+  overflow: hidden;
+  list-style: none;
+}
+
+header nav ul li {
+  float: left;
+  margin: 0.5em auto;
+
+}
+
+header nav ul li a{
+  color: #fff;
+  padding: 10px;
+  text-decoration: none;
+  display: inline-block;
+
+}
+
+header nav ul li a:hover{
+  background: rgba(240,71,71,0.3); 
+}
+
+header nav ul li span{
+  margin-right: 10px;
+}
+
 div.contenedor{
   margin: 0 auto;
   width: 80%;
@@ -82,7 +126,30 @@ footer.pie {
 }
 
 /* Cuando llegue a cierto nummero de px se cambia los estilos*/
-@media screen and (max-width: 900px){
+@media screen and (max-width: 800px){
+
+  header nav{
+    width: 80%;
+    height: 100%;
+    margin: 0;
+    position: fixed;
+
+  }
+  .nav_menu{
+
+    background-color: rgba(242,246,248,1);
+
+  }
+  header nav ul li{
+    display: block;
+    float: none;
+    border-bottom: 1.5px solid rgba(0,0,0, .3);
+  }
+  header nav ul li a{
+  color: rgba(31,178,90,1);
+ }
+
+
 
   div.contenedor{
     margin: 0 auto;
