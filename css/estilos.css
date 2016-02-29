@@ -77,6 +77,20 @@ div.contenedor{
   margin: 0 auto;
   width: 80%;
   }
+section.no_script{
+  background: rgba(242,246,248,0.5);
+  border-radius: 0.5em;
+  margin: 0.5em auto;
+  font-weight: bold;
+  font-size: 100%;
+  text-align: center;
+  width: 40%;
+}
+
+section.no_script a{
+  text-decoration: none;
+  color: green;
+}
 
 section.Welcome{
 	background: transparent;
@@ -177,7 +191,9 @@ footer.pie {
     margin: 0 auto;
     width: 100%;
   }
-
+  section.no_script{
+    font-size: 80%;
+  }
   section.world{
     flex-flow: column; 
   }
@@ -203,9 +219,10 @@ footer.pie {
 
   section.login {
     width: 95%;
-  
-      
-}
+  }
+  section.no_script{
+    font-size: 60%;
+  }
 
 }
 
