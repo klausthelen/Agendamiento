@@ -29,7 +29,11 @@ header{
   width: 100%;
 
 }
-
+.fecha{
+  font-family: cursive; 
+  color: green;
+  font-size: 100%;
+}
 .menu_bar{
   display: none;
 }
@@ -154,6 +158,10 @@ footer.pie {
     position: fixed;
 
   }
+  .fecha{
+    font-size: 80%;
+  }
+
   .nav_menu{
 
     background: rgba(39,46,50,1);

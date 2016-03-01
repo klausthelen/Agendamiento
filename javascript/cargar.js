@@ -5,7 +5,7 @@ function main(){
 	//funcion para que se anime el menu al iniciar
 	menu();	
 	index();
-	ocultar();
+	hora();
 	
 };
 
@@ -59,5 +59,14 @@ function index(){
 	$("#Welcome").toggle();
 	$("#Welcome").show(500,function(){});	
 	
-}				
+}		
+
+function hora(){
+	myTimer();
+	setInterval(myTimer, 1000);
+	function myTimer() {
+	    var d = new Date();
+	    document.getElementById("fecha").innerHTML = d.toLocaleTimeString();
+	}
+}		
 						

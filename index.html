@@ -15,10 +15,9 @@
 			function entrar_fail(){
 				 alert ("Gracias por presionarme, por el momento solo estoy de adorno.\n")
 				 alert ("Programame por favor¡¡¡¡¡ :3 \n")
-
+				 window.location.replace("tareas.html");
 			}
-
-		</script>
+			</script>
 	</head>
 	
 	<body>
@@ -27,16 +26,18 @@
          
 			<header class = "logo">
 				
-					<center><img class="img_logo" src="images/Logo.jpg" ></a></center>
+					<center><img class="img_logo" src="images/Logo.png" ></a></center>
 	            
 	 			
 			</header>
+
 			  <section id="Welcome" class ="Welcome">
 			  	<article> Plataforma Online para gestion y agendamiento de trabajos escolares. <br> <center>USB</center>  </article>
 			  </section>
+			  <center><p class="fecha" id="fecha"></p></center>
 			  <section class="world">
 			  			
-						<section class="image_usb"><img class="img_cal" src="images/cal.png" ></section>
+						<section class="image_usb"><img class="img_cal" id="img_cal" src="images/presindex/cal1.png" ></section>
 						<section class="login">
 							<form class="form1">
 	                    
@@ -64,4 +65,5 @@
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="javascript/ocultar_pass.js"></script>
     <script src="javascript/cargar.js"></script>
+    <script src="javascript/slide.js"></script>
 </html> 
