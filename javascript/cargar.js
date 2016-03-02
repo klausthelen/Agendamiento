@@ -20,11 +20,14 @@ function menu(){
 				$("#item2").hide();
 				$("#item3").hide();
 				$("#item4").hide();
+				$("#item5").hide();
 				$('nav').show(600,function(){});
 				$("#item1").show(400,function(){
 					$("#item2").show(400,function(){
 						$("#item3").show(400,function(){	
-							$("#item4").show(400,function(){		
+							$("#item4").show(400,function(){
+								$("#item5").show(400,function(){		
+								});			
 							});	
 						});
 					});
