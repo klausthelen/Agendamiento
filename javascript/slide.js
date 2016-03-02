@@ -1,4 +1,5 @@
 var i = 0;
+pasar();
 var myVar = setInterval(pasar, 1500);
 	 function pasar () {
 	 		
@@ -11,6 +12,6 @@ var myVar = setInterval(pasar, 1500);
 	 			); 
 
 	 		if(i==5){i=0;}
-		 		document.getElementById('img_cal').src = ruta_images[i];
-			i= i + 1;
+		 	document.getElementById('img_cal').src = ruta_images[i];
+		 	i= i + 1;
 	}	

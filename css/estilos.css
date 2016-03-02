@@ -31,22 +31,32 @@ header{
 }
 .fecha{
   font-family: cursive; 
-  color: green;
+  color: white;
   font-size: 100%;
 }
 .menu_bar{
   display: none;
 }
 
-.nav_menu{
+nav{
   height: auto;
   margin: 0.5em auto;
   width: 80%;
   overflow: hidden;
   background: rgba(39,46,50,0.5);
   font-weight: bold;
-
 }
+.menu_fixed{
+  position: fixed;
+  z-index: 1000;
+  margin-left: 100px;
+  top: 0;
+  width: 80%;
+  max-width: 875px;
+  box-shadow: 0px 4px 3px rgba(0,0,0,.5);
+}
+
+
 
 header nav ul {
   overflow: hidden;
@@ -72,6 +82,8 @@ header nav ul li a{
 header nav ul li a:hover{
   background: rgba(240,71,71,0.3); 
 }
+
+
 
 header nav ul li span{
   margin-right: 3px;
@@ -165,8 +177,24 @@ footer.pie {
   .nav_menu{
 
     background: rgba(39,46,50,1);
-
+    
   }
+
+  .menu_fixed{
+  position: fixed;
+  z-index: 1000;
+  top: 500;
+  max-width: 1000px;
+  box-shadow: 0px 4px 3px rgba(0,0,0,.5);
+}
+  .mnu_bar_fxd{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    max-width: 1000px;
+    box-shadow: 0px 4px 3px rgba(0,0,0,.5);
+  }
+
   header nav ul li{
     display: block;
     float: none;
