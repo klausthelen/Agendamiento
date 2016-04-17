@@ -15,13 +15,16 @@
 			function entrar_fail(){
 				 alert ("Gracias por presionarme, por el momento solo estoy de adorno.\n")
 				 alert ("Programame por favor¡¡¡¡¡ :3 \n")
-				 window.location.replace("tareas.html");
+				 window.location.replace("tareas.php");
 			}
 			</script>
 	</head>
 	
 	<body>
-	
+		<?php 
+			$stringo = "Estamos usando PHP";
+			echo $stringo;
+		?>
 		 <div class="contenedor">
          
 			<header class = "logo">
@@ -30,7 +33,7 @@
 	            
 	 			
 			</header>
-
+			
 			  <section id="Welcome" class ="Welcome">
 			  	<article> Plataforma Online para gestion y agendamiento de trabajos escolares. <br> <center>USB</center> 	
 			  	<a class="acerca" href="https://github.com/klausthelen"><span class="icon-accessibility"></span> Acerca de</a></article>
@@ -40,21 +43,25 @@
 			  			
 						<section class="image_usb"><img class="img_cal" id="img_cal" src="images/presindex/cal1.png" ></section>
 						<section class="login">
-							<form class="form1">
+							<form class="form1" method="post" action="hola.php" name="form_user">
 	                    
 								    <span class="icon-user"> </span>Usuario:<br>
-				                    <input type="text" name="Usuario" id="user_input" class="user_input">
+				                    <input type="text" name="usuario" id="user_input" class="user_input">
 				                    <br>
 			        			    <span class="icon-key2"> </span>Contraseña:<br>
-				                    <input type="password" name="Contraseña" id="password_input" class="password_input">
+				                    <input type="password" name="contrasenia" id="password_input" class="password_input">
+				                    <label>Tipo de usuario</label> 
+				                    <select name="User_tipe">
+				                    	<option value="estudiante">Estudiante</option>
+				                    	<option value="profesor">Profesor</option>
+				                    </select>
+				                    </br>
+				                    <button class="btn_entrar"  type="submit"><span class="icon-clubs"></span> Entrar</button>
 				            </form>        
-				                    <button  id="btn_nopass" onclick="ocultar_pass()" class="btn_oc_pass type="button" "><span class="icon-power"></span>Mostrar contraseña</button>
-
-				                    <button onclick="entrar_fail()" class="btn_entrar"><span class="icon-clubs"></span> Entrar</button>
 				                    
-			        				
-			            	
-						</section>
+				            		<button  id="btn_nopass" onclick="ocultar_pass()" class="btn_oc_pass type="button" "><span class="icon-power"></span>Mostrar contraseña</button>
+				                    
+				        </section>
 						
 			  </section>
 			  
