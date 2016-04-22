@@ -1,3 +1,10 @@
+<?php 
+session_start();
+if ($_SESSION) {
+	header("location:tareas.php");
+}
+ ?>
+
 <!DOCTYPE html>
 <html lang="es">
 	<head>
@@ -21,11 +28,7 @@
 	</head>
 	
 	<body>
-		<?php 
-			$stringo = "Estamos usando PHP";
-			echo $stringo;
-		?>
-		 <div class="contenedor">
+		<div class="contenedor">
          
 			<header class = "logo">
 				
@@ -43,7 +46,7 @@
 			  			
 						<section class="image_usb"><img class="img_cal" id="img_cal" src="images/presindex/cal1.png" ></section>
 						<section class="login">
-							<form class="form1" method="post" action="hola.php" name="form_user">
+							<form class="form1" method="post" action="modelo/sesion.php" name="form_user">
 	                    
 								    <span class="icon-user"> </span>Usuario:<br>
 				                    <input type="text" name="usuario" id="user_input" class="user_input">

@@ -1,3 +1,11 @@
+<?php 
+include ("modelo/conexion.php");
+session_start();
+if(!$_SESSION){
+	header("location:index.php");
+}
+ ?>
+
 <!DOCTYPE html>
 <html lang="es">
 	<head>
@@ -29,7 +37,7 @@
 	            			<li><a id="item2" href="#">		  <span class="icon-books"></span>Cursos </a></li>
 	            			<li><a id="item3" href="#">          <span class="icon-mail2"></span>Mensajes </a></li>
 	            			<li><a id="item4" href="https://github.com/klausthelen"> <span class="icon-accessibility"></span>Acerca de. </a></li>
-	            			<li><a id="item5" href="index.php"> <span class="icon-exit"></span>Cerrar sesion </a></li>	
+	            			<li><a id="item5" href="cerrar.php"> <span class="icon-exit"></span>Cerrar sesion </a></li>	
 	            				
 	            			</ul>
 	            	</nav>
@@ -40,7 +48,7 @@
 			  			<section class="listado">Aqui se insertaran los cursos que posee el estudiante
 			  			<br>
 			  			<?php 
-							echo "Estamos usando PHP";
+							echo $_SESSION['nombre'];
 		                ?>
 			  			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 			  			</section>
