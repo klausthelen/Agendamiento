@@ -87,6 +87,7 @@ ALTER TABLE toma add foreign key (IDcurso)
     references estudiante(IDestudiante);
  ALTER TABLE definitivas add foreign key (IDcurso)
     references curso(IDcurso);
+    ALTER TABLE `definitivas` CHANGE `IDdefinitiva` `IDdefinitiva` INT(11) NOT NULL AUTO_INCREMENT;
 
  CREATE TABLE `chronowork`.`retroalimentacion` ( 
  	`IDnota` INT NOT NULL , 

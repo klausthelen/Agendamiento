@@ -1,9 +1,12 @@
 <?php 
 include ("conexion.php");
-$usuario = $_POST['usuario'];
+$usua = $_POST['usuario'];
+$usuario = (int) $usua;
 $contrasenia = $_POST['contrasenia'];
 $tipo = $_POST['User_tipe'];
 $query = "";
+
+
 if(isset($usuario)){
 	session_start();
 	if($tipo == "profesor"){
@@ -11,7 +14,9 @@ if(isset($usuario)){
 		$registro = mysql_query($query,$con);
 		$row = mysql_fetch_array($registro);
 		if(!$row['IDprofesor']){
-			header("location:../index.php");
+			echo"<script>alert('El usuario, contraseña o tipo de usuario no son correctos');</script>";
+			echo "<script> window.location = '../index.php';</script>";
+			
 		}
 		else{
 			$_SESSION['id_usuario'] = $row['IDprofesor'];
@@ -24,7 +29,8 @@ if(isset($usuario)){
 		$registro = mysql_query($query,$con);
 		$row = mysql_fetch_array($registro);
 		if(!$row['IDestudiante']){
-			header("location:../index.php");
+			echo"<script>alert('El usuario, contraseña o tipo de usuario no son correctos');</script>";
+			echo "<script> window.location = '../index.php';</script>";
 		}
 		else{
 			$_SESSION['id_usuario'] = $row['IDestudiante'];
@@ -35,6 +41,11 @@ if(isset($usuario)){
 
 }
 else{
-	header("location:../index.php");
+	echo"<script>alert('El usuario, contraseña o tipo de usuario no son correctos');</script>";
+	echo "<script> window.location = '../index.php';</script>";
 }
+
+
+
+
 
